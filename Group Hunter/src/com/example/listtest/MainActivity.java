@@ -66,7 +66,15 @@ public class MainActivity extends ActionBarActivity {
 	private void populateClassList() {
 		// TODO Auto-generated method stub
 		classes.add(new Course("CSC505", "Algorithms", "Description"));
-		classes.add(new Course("CSC520", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-506", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-503", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-540", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-510", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-521", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-587", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-512", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-524", "ArtificialIntelligence", "Machines"));
+		classes.add(new Course("CSC-554", "ArtificialIntelligence", "Machines"));
 	}
 
 	@Override
@@ -99,7 +107,7 @@ public class MainActivity extends ActionBarActivity {
 				itemView= getLayoutInflater().inflate(R.layout.item_list,parent,false);
 			}
 			Course currentClass=classes.get(position);
-			TextView imageView = (TextView)itemView.findViewById(R.id.item_course);
+			TextView imageView = (TextView)itemView.findViewById(R.id.course_name);
 			imageView.setText(currentClass.getName());
 //			return super.getView(position, convertView, parent);
 			return itemView;
